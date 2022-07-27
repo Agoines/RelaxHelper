@@ -7,7 +7,7 @@ android {
     compileSdk = 33
 
     defaultConfig {
-        applicationId = "com.example.template"
+        applicationId = "com.agoines.relaxhelp"
         minSdk = 24
         targetSdk = 33
         versionCode = 1
@@ -33,6 +33,10 @@ android {
     kotlinOptions {
         jvmTarget = JavaVersion.VERSION_11.toString()
     }
+    dependenciesInfo {
+        includeInApk = false
+    }
+    buildToolsVersion = "33.0.0"
 }
 
 dependencies {
